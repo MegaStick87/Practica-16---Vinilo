@@ -1,0 +1,153 @@
+/* Estilos generales del cuerpo del documento */
+body {
+    background-image: url(/img/bg.jpg); /* Define una imagen de fondo. */
+    background-size: cover; /* Asegura que la imagen de fondo cubra toda la página. */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita. */
+    font-family: "Bebas Neue", sans-serif; /* Establece la fuente predeterminada. */
+    text-shadow: 2px 2px 4px #000000; /* Agrega una sombra al texto para mejorar la legibilidad. */
+}
+
+/* Estilos específicos para el video de fondo */
+#font_vid {
+    position: fixed; /* Fija el video en una posición específica en la página. */
+    right: 0; /* Alinea el video a la derecha de la pantalla. */
+    bottom: 0; /* Alinea el video en la parte inferior de la pantalla. */
+    min-width: 100%; /* Asegura que el video ocupe al menos el 100% del ancho de la pantalla. */
+    min-height: 100%; /* Asegura que el video ocupe al menos el 100% del alto de la pantalla. */
+    z-index: -1; /* Coloca el video detrás de otros elementos en la página. */
+    align-items: center; /* Centra el contenido dentro del elemento de video. */
+}
+
+/* Estilos para los encabezados h1 */
+h1 {
+    color: rgb(255, 0, 0); /* Color del texto del encabezado. */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el texto del encabezado. */
+    padding: 10px 20px; /* Relleno interior del encabezado. */
+    border: 2px solid white; /* Borde sólido blanco alrededor del encabezado. */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6); /* Sombra de caja para efecto 3D. */
+    text-align: center; /* Alineación central del texto dentro del encabezado. */
+    margin: 20px auto; /* Margen superior e inferior con alineación automática horizontal. */
+    display: inline-block; /* El encabezado se muestra como un bloque en línea. */
+    border-radius: 10px; /* Bordes redondeados del encabezado. */
+    backdrop-filter: blur(20px); /* Efecto de desenfoque detrás del elemento. */
+}
+
+/* Estilos para elementos <pre> */
+pre {
+    color: #fff; /* Color del texto para elementos <pre>. */
+    font-weight: bold; /* Negrita para el texto de <pre>. */
+    font-family: "Bebas Neue", sans-serif; /* Tipo de fuente para <pre>. */
+    font-style: normal; /* Estilo de fuente normal para <pre>. */
+}
+
+/* Estilos para la consola del vinilo */
+.console {
+    width: 500px; /* Ancho de la consola */
+    height: 500px; /* Altura de la consola */
+    border: 5px solid #000; /* Borde sólido negro */
+    border-radius: 20%; /* Bordes redondeados */
+    position: relative; /* Posición relativa respecto a su posición normal */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde del área del elemento */
+    display: block; /* Se muestra como un bloque, ocupando toda la línea */
+    margin-left: auto; /* Margen izquierdo automático para centrar horizontalmente */
+    margin-right: auto; /* Margen derecho automático para centrar horizontalmente */
+    margin-top: 70px; /* Margen superior */
+    align-items: center; /* Alineación de los elementos hijos en el centro */
+    background-image: url(/img/consoleTexture.jpg); /* Imagen de fondo de la consola */
+    background-size: cover; /* La imagen de fondo cubre completamente el área */
+    background-repeat: no-repeat; /* La imagen de fondo no se repite */
+}
+
+/* Estilos para el vinilo */
+.vinilo {
+    height: 400px; /* Altura del vinilo */
+    width: 400px; /* Ancho del vinilo */
+    background-color: #ff0000; /* Color de fondo rojo */
+    border-radius: 50%; /* Forma circular */
+    position: absolute; /* Posición absoluta respecto a su contenedor relativo más cercano */
+    display: block; /* Se muestra como un bloque */
+    margin-left: 55px; /* Margen izquierdo */
+    margin-top: 55px; /* Margen superior */
+    animation: girar 10s linear infinite; /* Animación para girar continuamente */
+}
+
+/* Estilos para la parte del álbum del vinilo */
+.album {
+    width: 250px; /* Ancho del álbum */
+    height: 250px; /* Altura del álbum */
+    background-color: #fff; /* Color de fondo blanco */
+    border-radius: 15%; /* Bordes ligeramente redondeados */
+    position: relative; /* Posición relativa */
+    margin-left: auto; /* Centrado horizontal */
+    margin-right: auto; /* Centrado horizontal */
+    margin-top: -315px; /* Posicionamiento vertical */
+    background-image: url(img/album.jpg); /* Imagen de fondo para el álbum */
+    background-size: cover; /* La imagen de fondo cubre completamente el área */
+    background-repeat: no-repeat; /* La imagen de fondo no se repite */
+    border-radius: 50%; /* Forma circular */
+    animation: girar 10s linear infinite; /* Animación para girar continuamente */
+}
+
+/* Estilos para el agujero central del vinilo */
+.agujero {
+    width: 20px; /* Ancho del agujero */
+    height: 20px; /* Altura del agujero */
+    background-color: #000; /* Color de fondo negro */
+    border-radius: 50%; /* Forma circular */
+    position: absolute; /* Posición absoluta */
+    top: 50%; /* Centrado vertical */
+    left: 50%; /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Ajusta la posición para centrar exactamente */
+}
+
+/* Estilos para las líneas del vinilo */
+.linea1 {
+    background-color: #fff; /* Color de fondo blanco */
+    border-radius: 50%; /* Forma circular */
+    position: relative; /* Posición relativa */
+    top: 50%; /* Posicionamiento vertical */
+    left: 50%; /* Posicionamiento horizontal */
+    transform: translate(-50%, -50%); /* Ajuste de posición para centrar */
+}
+
+/* Animación para girar el vinilo y el álbum */
+@keyframes girar {
+    from { transform: rotate(0deg); } /* Inicio de la rotación */
+    to { transform: rotate(360deg); } /* Fin de la rotación */
+}
+
+/* Estilos para la tornamesa */
+.turntable {
+    width: 100px; /* Ancho */
+    height: 100px; /* Altura */
+    backdrop-filter: blur(20px); /* Filtro de desenfoque en el fondo */
+    border-radius: 60%; /* Bordes redondeados */
+    position: relative; /* Posición relativa */
+    animation: beat 1s infinite alternate ease-in-out; /* Animación con efecto de latido */
+}
+
+@keyframes bear {
+    to{
+        transform: rotate(45deg)
+        scale(1.05);
+    }
+}
+
+/* Estilos para la aguja del tocadiscos */
+.aguja {
+    width: 4px; /* Ancho fijo de 4px */
+    height: 270px; /* Altura fija de 270px */
+    background-color: rgb(13, 13, 13); /* Color de fondo oscuro */
+    position: absolute; /* Posicionamiento absoluto */
+    top: 50%; /* Posicionado en la mitad verticalmente del elemento padre */
+    left: 50%; /* Posicionado en la mitad horizontalmente del elemento padre */
+    border-radius: 100%; /* Bordes redondeados para una forma cilíndrica */
+    transform-origin: top; /* El punto de origen para transformaciones es la parte superior del elemento */
+    transform: translateX(-50%) rotate(-45deg); /* Desplazamiento horizontal y rotación inicial */
+    transition: transform 0.3s ease-in-out; /* Transición suave para las transformaciones */
+}
+  
+  /* Rotación de la aguja */
+.aguja.playing {
+    transform: translateX(-50%) rotate(45deg); /* Rota la aguja a 45 grados durante la reproducción */
+  }
